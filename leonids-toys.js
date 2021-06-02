@@ -34,23 +34,7 @@ const toys = [
         maker: "Nintendo",
         price: 425.99,
         age: 13
-    }
+    },
 ]
-for (const toy of toys) {
-    console.log(`The Price of this toy is $${toy.price}`)
-}
-for (const toy of toys) {
-    console.log(`The name of this toy is ${toy.name}`)
-}
-for (const toy of toys) {
-    console.log(`This toy is manufactued by ${toy.maker}`)
-}
-for (const toy of toys) {
-    console.log(`For ages ${toy.age} + and up`)
-}
+ const 
 
-const toys = [
-    // Add your objects here
-]
-
-console.log(toys)
