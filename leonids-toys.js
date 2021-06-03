@@ -47,6 +47,7 @@ const toys = [
  toys.push(xbox)
 
  for (const toy of toys) {
+     toy.price = toy.price * 5
     console.log(`This is a ${toy.name} made by ${toy.maker} it costs $${toy.price} for ages ${toy.age} and up.`)
 }
  
