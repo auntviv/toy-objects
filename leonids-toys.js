@@ -1,4 +1,6 @@
 // Barbie, Racecar,Giant Nutcracker, Train Set, Portable Gaming System (id ;string, name; string, maker; string, price; number float, age; number)
+const toyToFind = 2
+
 const toys = [
     {
         id: 1,
@@ -47,8 +49,9 @@ const toys = [
  toys.push(xbox)
 
  for (const toy of toys) {
+     if (toy.id === toyToFind) {
      toy.price = toy.price * 5
     console.log(`This is a ${toy.name} made by ${toy.maker} it costs $${toy.price} for ages ${toy.age} and up.`)
-}
- 
+    }
+}   
  
