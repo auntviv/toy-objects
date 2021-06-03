@@ -36,5 +36,19 @@ const toys = [
         age: 13
     },
 ]
- const 
+ const xbox = {
+     id: 6,
+     name: "XBox",
+     maker: "Playstation",
+     price: 500.27,
+     age: 10
+ }
 
+ toys.push(xbox)
+
+ for (const toy of toys) {
+    console.log(`Price is $${toy.price}`)
+}
+
+
+ 
