@@ -36,22 +36,36 @@ const toys = [
         maker: "Nintendo",
         price: 425.99,
         age: 13
-    },
+    }
 ]
- const xbox = {
-     id: 6,
-     name: "XBox",
-     maker: "Playstation",
-     price: 500.27,
-     age: 10
- }
 
- toys.push(xbox)
+const addToyToInventory = (toyObject) => {
+    const lastIndex = toys.length - 1
+
+    const currentLastToy = toys[lastIndex]
+         
+    const maxId = currentLastToy.id
+
+    const idForNewToy = maxId +1
+
+    toyObject.id = idForNewToy
+
+    toys.push(toyObject)
+    }
+        
+    const xbox = {
+        name: "XBox",
+        maker: "Playstation",
+        price: 500.27,
+        age: 10
+    }
+
+addToyToInventory(xbox)
+
 
  for (const toy of toys) {
-     if (toy.id === toyToFind) {
-     toy.price = toy.price * 5
     console.log(`This is a ${toy.name} made by ${toy.maker} it costs $${toy.price} for ages ${toy.age} and up.`)
-    }
-}   
+}
+   console.log(toys)
+
  
